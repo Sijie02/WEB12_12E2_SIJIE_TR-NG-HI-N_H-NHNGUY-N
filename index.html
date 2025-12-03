@@ -8,13 +8,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles.css">
-
 </head>
+
 <body>
+
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  <div class="w3-bar w3-card nav-bg">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" 
+       href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+       <i class="fa fa-bars"></i>
+    </a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="#italian" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ITALIAN</a>
     <a href="#chinese" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CHINESE</a>
@@ -25,9 +29,8 @@
   </div>
 </div>
 
-
 <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium nav-bg small-nav">
   <a href="#italian" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ITALIAN</a>
   <a href="#chinese" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CHINESE</a>
   <a href="#french" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FRENCH</a>
@@ -37,171 +40,182 @@
   <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RECIPES</a>
 </div>
 
-
 <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
+<div class="w3-content page-container">
 
   <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center">
-    <img src="./assets/eat-pray-love-39581-3.jpeg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <img src="./assets/eat-pray-love-39581-3.jpeg" class="slide-img">
+    <div class="slide-caption">
       <h3>Pizza Margherita</h3>
       <p><b>A vibrant, balanced blend of acidic, creamy, and herbal flavors.</b></p>  
     </div>
   </div>
+
   <div class="mySlides w3-display-container w3-center">
-    <img src="./assets/pasta.webp" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <img src="./assets/pasta.webp" class="slide-img">
+    <div class="slide-caption">
       <h3>Pasta Carbonara</h3>
       <p><b>A silky, rich sauce of egg, cheese, and guanciale coats the pasta.</b></p>    
     </div>
   </div>
+
   <div class="mySlides w3-display-container w3-center">
-    <img src="./assets/2018_01_Croissant_IMG_0685.JPG" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <img src="./assets/2018_01_Croissant_IMG_0685.JPG" class="slide-img">
+    <div class="slide-caption">
       <h3>Croissant</h3>
-      <p><b>A French Viennoiserie in a crescent shape made from laminated yeast dough. </b></p>    
+      <p><b>A French Viennoiserie in a crescent shape made from laminated yeast dough.</b></p>    
     </div>
   </div>
 
-
-  <!-- The World Cuisines Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="world-cuisines">
+  <!-- WORLD CUISINES -->
+  <div class="w3-container w3-content section" id="world-cuisines">
     <h2 class="w3-wide">WORLD CUISINES</h2>
     <p class="w3-opacity"><i>Explore the flavors of the world</i></p>
-    <p class="w3-justify">Discover the rich diversity of global cuisines, from the fresh ingredients of Italian dishes to the spicy blends of Indian curries. Each cuisine tells a story of culture, tradition, and innovation. Whether you're a food enthusiast or just looking for inspiration, this site showcases some of the most beloved dishes from around the world.</p>
+    <p class="w3-justify">
+      Discover the rich diversity of global cuisines...
+    </p>
+
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p>Italian</p>
-        <img src="./assets/eat-pray-love-39581-3.jpeg" class="w3-round w3-margin-bottom" alt="Pizza Margherita" style="width:60%">
+        <img src="./assets/eat-pray-love-39581-3.jpeg" class="w3-round cuisine-img" alt="Pizza Margherita">
       </div>
       <div class="w3-third">
         <p>Chinese</p>
-        <img src="./assets/peking-duck-1-19.jpg"class="w3-round w3-margin-bottom" alt="Peking Duck" style="width:60%">
+        <img src="./assets/peking-duck-1-19.jpg" class="w3-round cuisine-img" alt="Peking Duck">
       </div>
       <div class="w3-third">
         <p>French</p>
-        <img src="./assets/2018_01_Croissant_IMG_0685.JPG" class="w3-round" alt="Croissant" style="width:60%">
+        <img src="./assets/2018_01_Croissant_IMG_0685.JPG" class="w3-round cuisine-img" alt="Croissant">
       </div>
     </div>
   </div>
 
-
-  <!-- Featured Dishes Section -->
+  <!-- FEATURED DISHES -->
   <div class="w3-black" id="featured-dishes">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">FEATURED DISHES</h2>
-      <p class="w3-opacity w3-center"><i>Try these iconic dishes!</i></p><br>
+    <div class="w3-container w3-content section">
 
+      <h2 class="w3-wide w3-center">FEATURED DISHES</h2>
+      <p class="w3-opacity w3-center"><i>Try these iconic dishes!</i></p>
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">Pizza Margherita <span class="w3-tag w3-red w3-margin-left"> hot</span></li>
+        <li class="w3-padding">Pizza Margherita <span class="w3-tag w3-red w3-margin-left">hot</span></li>
         <li class="w3-padding">Peking Duck <span class="w3-tag w3-red w3-margin-left">hot</span></li>
         <li class="w3-padding">Croissant <span class="w3-badge w3-right w3-margin-right">try me</span></li>
       </ul>
 
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+      <div class="w3-row-padding dishes-row">
         <div class="w3-third w3-margin-bottom">
-          <img src="./assets/eat-pray-love-39581-3.jpeg" alt="Pizza Margherita" style="width:100%" class="w3-hover-opacity">
+          <img src="./assets/eat-pray-love-39581-3.jpeg" class="dish-img" alt="Pizza">
           <div class="w3-container w3-white">
             <p><b>Pizza Margherita</b></p>
             <p class="w3-opacity">Italian Classic</p>
-            <p>A vibrant, balanced blend of acidic, creamy, and herbal flavors.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('dishModal').style.display='block'">BOOK</button>
+            <p>A vibrant, balanced blend...</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="openDish()">BOOK</button>
           </div>
         </div>
+
         <div class="w3-third w3-margin-bottom">
-          <img src="./assets/peking-duck-1-19.jpg" alt="Peking Duck" style="width:100%" class="w3-hover-opacity"> <!-- Placeholder -->
+          <img src="./assets/peking-duck-1-19.jpg" class="dish-img" alt="Duck">
           <div class="w3-container w3-white">
             <p><b>Peking Duck</b></p>
             <p class="w3-opacity">Chinese Specialty</p>
-            <p>A crispy-skinned duck served with pancakes and savory accompaniments.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('dishModal').style.display='block'">BOOK</button>
+            <p>A crispy-skinned duck...</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="openDish()">BOOK</button>
           </div>
         </div>
+
         <div class="w3-third w3-margin-bottom">
-          <img src="./assets/2018_01_Croissant_IMG_0685.JPG" alt="Croissant" style="width:100%" class="w3-hover-opacity">
+          <img src="./assets/2018_01_Croissant_IMG_0685.JPG" class="dish-img" alt="Croissant">
           <div class="w3-container w3-white">
             <p><b>Croissant</b></p>
             <p class="w3-opacity">French Pastry</p>
-            <p>A laminated yeast dough pastry in a crescent shape.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('dishModal').style.display='block'">BOOK</button>
+            <p>A laminated yeast dough...</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="openDish()">BOOK</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 
   <!-- Dish Modal -->
   <div id="dishModal" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32">
-        <span onclick="document.getElementById('dishModal').style.display='none'"
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+      <header class="w3-container modal-header">
+        <span onclick="closeDish()" class="w3-button w3-xlarge w3-display-topright close-btn">×</span>
         <h2 class="w3-wide"><i class="fa fa-utensils w3-margin-right"></i>Dish Details</h2>
       </header>
       <div class="w3-container">
-        <p>Please note we do not accept bank transfers after receiving goods! </p>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('dishModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p>Please note we do not accept bank transfers after receiving goods!</p>
+        <button class="w3-button w3-red w3-section" onclick="closeDish()">Close <i class="fa fa-remove"></i></button>
       </div>
     </div>
   </div>
 
-
-  <!-- Cuisine Sections -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="italian">
+  <!-- ITALIAN -->
+  <div class="w3-container w3-content section" id="italian">
     <h2 class="w3-wide">ITALIAN CUISINE</h2>
-    <p class="w3-justify">Known for fresh ingredients and regional diversity. <br> Pizza Margherita: A vibrant, balanced blend of acidic, creamy, and herbal flavors. <br> Pasta Carbonara: A silky, rich sauce of egg, cheese, and guanciale coats the pasta. <br> Risotto alla Milanese: A creamy, saffron-infused rice with a luxurious, wavy consistency.</p>
-    <img src="./assets/eat-pray-love-39581-3.jpeg" style="width:100%">
+    <p class="w3-justify">
+      Known for fresh ingredients...
+    </p>
+    <img src="./assets/eat-pray-love-39581-3.jpeg" class="section-img">
   </div>
 
-
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="chinese">
+  <!-- CHINESE -->
+  <div class="w3-container w3-content section" id="chinese">
     <h2 class="w3-wide">CHINESE CUISINE</h2>
-    <p class="w3-justify">A tapestry of flavors and textures. <br> Peking Duck: A crispy-skinned duck served with pancakes and savory accompaniments. <br> Dim Sum: Shanghai Soup Dumplings (Xiǎo Lóng Bāo): Dumplings with a rich, hot broth inside a delicate, steamed pouch. <br> Hot Pot: Sichuan Ma La Hot Pot: A fiery, numbing broth for cooking a variety of meats and vegetables.</p>
-    <img src="./assets/peking-duck-1-19.jpg" style="width:100%"> <!-- Placeholder -->
+    <p class="w3-justify">
+      A tapestry of flavors...
+    </p>
+    <img src="./assets/peking-duck-1-19.jpg" class="section-img">
   </div>
 
-
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="french">
+  <!-- FRENCH -->
+  <div class="w3-container w3-content section" id="french">
     <h2 class="w3-wide">FRENCH CUISINE</h2>
-    <p class="w3-justify">Renowned for its elegance, sophistication, and emphasis on sauces, pastries, and fine wine. <br> Croissant: A French Viennoiserie in a crescent shape made from a laminated yeast dough that sits between a bread and a puff pastry. <br> Steak Tartare: A French dish of raw ground beef. It is usually served with onions, capers, parsley or chive, salt, pepper, Worcestershire sauce and other seasonings. <br> Crème Brûlée: A French dessert consisting of a rich custard base topped with a layer of hardened caramelized sugar.</p>
-    <img src="assets/2018_01_Croissant_IMG_0685.JPG" style="width:100%">
+    <p class="w3-justify">
+      Renowned for its elegance...
+    </p>
+    <img src="./assets/2018_01_Croissant_IMG_0685.JPG" class="section-img">
   </div>
 
-
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="japanese">
+  <!-- JAPANESE -->
+  <div class="w3-container w3-content section" id="japanese">
     <h2 class="w3-wide">JAPANESE CUISINE</h2>
-    <p class="w3-justify">A blend of aesthetics and flavor that emphasizes fresh, seasonal ingredients and precise presentation.</p>
-   <img src="./assets/Oseti.jpg"></div>
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="indian">
+    <p class="w3-justify">
+      A blend of aesthetics...
+    </p>
+    <img src="./assets/Oseti.jpg" class="section-img">
+  </div>
+
+  <!-- INDIAN -->
+  <div class="w3-container w3-content section" id="indian">
     <h2 class="w3-wide">INDIAN CUISINE</h2>
-    <p class="w3-justify">Features a rich diversity of flavors, spices, and regional variations, with dishes like curry and chai tea.</p>
-<img src="./assets/traditional-food-of-india.jpg"style="width:100%">  </div>
+    <p class="w3-justify">
+      Features a rich diversity...
+    </p>
+    <img src="./assets/traditional-food-of-india.jpg" class="section-img">
+  </div>
 
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <!-- CONTACT -->
+  <div class="w3-container w3-content section" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <p class="w3-opacity w3-center"><i>Have a suggestion? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
+
+    <div class="contact-row">
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Worldwide<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: contact@worldcuisines.com<br>
+        <i class="fa fa-map-marker icon"></i> Worldwide<br>
+        <i class="fa fa-envelope icon"></i> Email: contact@worldcuisines.com<br>
       </div>
+
       <div class="w3-col m6">
         <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
+          <div class="two-inputs">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
           </div>
+
           <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
           <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
         </form>
@@ -209,45 +223,43 @@
     </div>
   </div>
 
-
-  <!-- Submission Form for New Cuisines -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+  <!-- Submit Cuisine -->
+  <div class="w3-container w3-content section">
     <h2 class="w3-wide w3-center">SUBMIT A NEW CUISINE</h2>
     <p class="w3-opacity w3-center"><i>Help us expand our collection!</i></p>
+
     <form action="/submit_cuisine.php" target="_blank">
-      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-        <div class="w3-half">
-          <input class="w3-input w3-border" type="text" placeholder="Cuisine Name" required name="CuisineName">
-        </div>
-        <div class="w3-half">
-          <input class="w3-input w3-border" type="text" placeholder="Country/Region" required name="Region">
-        </div>
+      <div class="two-inputs">
+        <input class="w3-input w3-border" type="text" placeholder="Cuisine Name" required name="CuisineName">
+        <input class="w3-input w3-border" type="text" placeholder="Country/Region" required name="Region">
       </div>
+
       <textarea class="w3-input w3-border" placeholder="Description" required name="Description"></textarea>
       <input class="w3-input w3-border" type="url" placeholder="Image URL" name="ImageURL">
+
       <button class="w3-button w3-black w3-section w3-right" type="submit">SUBMIT</button>
     </form>
   </div>
- 
-<!-- End Page Content -->
+
 </div>
 
-
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<footer class="w3-container w3-center w3-opacity w3-light-grey footer">
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://lsts.instructure.com/courses/8383/discussion_topics/167820?module_item_id=1258845" target="_blank">SI JIE TRỌNG HIẾN HẠNH NGUYÊN</a></p>
-</footer>
-<script src="script.js"></script>
 
+  <p class="w3-medium">Powered by 
+    <a href="https://lsts.instructure.com/courses/8383/discussion_topics/167820?module_item_id=1258845" target="_blank">
+      SI JIE TRỌNG HIẾN HẠNH NGUYÊN
+    </a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-
-
-
